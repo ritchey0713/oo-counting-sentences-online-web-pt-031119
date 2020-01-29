@@ -19,7 +19,7 @@ class String
     # self.split(/[.!?] /).count
       count = []
 
-    new_str = str.split("").reject do |letter|
+    new_str = self.split("").reject do |letter|
       if letter == "?" || letter == "." || letter == "!" 
         count << letter
       end 
