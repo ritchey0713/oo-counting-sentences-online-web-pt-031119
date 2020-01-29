@@ -24,7 +24,7 @@ class String
         count << letter
       end 
     end 
-
-count.uniq.length
+    
+  count.uniq.length
   end
 end
