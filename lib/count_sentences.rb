@@ -17,6 +17,14 @@ class String
   def count_sentences
     # binding.pry 
     # self.split(/[.!?] /).count
-    binding.pry
+      count = []
+
+    new_str = str.split("").reject do |letter|
+      if letter == "?" || letter == "." || letter == "!" 
+        count << letter
+      end 
+    end 
+
+count.uniq.length
   end
 end
